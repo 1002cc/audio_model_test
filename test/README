@@ -1,11 +1,19 @@
+# 项目基于 ESP32 + LVGL + platformio
 
-This directory is intended for PlatformIO Test Runner and project tests.
+## 介绍
 
-Unit Testing is a software testing method by which individual units of
-source code, sets of one or more MCU program modules together with associated
-control data, usage procedures, and operating procedures, are tested to
-determine whether they are fit for use. Unit testing finds problems early
-in the development cycle.
+使用 **ESP32-audioI2S** 库和 **LVGL** 实现的图形化音乐电台项目例子
 
-More information about PlatformIO Unit Testing:
-- https://docs.platformio.org/en/latest/advanced/unit-testing/index.html
+可以选择电台和调节音量
+
+![alt text](image.png)
+
+## 硬件
+
+1.ESP32-WROOM-32E 开发板  
+2.MAX98357 + 喇叭  
+3.触摸屏
+
+## UI 绘制使用 squareLine
+
+![alt text](image-1.png)

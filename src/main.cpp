@@ -21,8 +21,8 @@ Preferences preferences;
 
 Audio audio;
 
-String ssid = "317";
-String password = "317123456";
+String ssid = "****";
+String password = "****";
 
 String stations[] = {
     "0n-80s.radionetz.de:8000/0n-70s.mp3",
@@ -36,13 +36,11 @@ String stations[] = {
     "macslons-irish-pub-radio.com/media.asx",
 };
 
-// some global variables
-
 uint8_t max_volume = 21;
-uint8_t max_stations = 0; // will be set later
-uint8_t cur_station = 3;  // current station(nr), will be set later
-uint8_t cur_volume = 0;   // will be set from stored preferences
-int8_t cur_btn = -1;      // current button (, -1 means idle)
+uint8_t max_stations = 0;
+uint8_t cur_station = 3;
+uint8_t cur_volume = 0;
+int8_t cur_btn = -1;
 
 void audioPlay();
 
@@ -70,14 +68,8 @@ void my_touchpad_read(lv_indev_drv_t *indev_drv, lv_indev_data_t *data)
     } else {
         data->state = LV_INDEV_STATE_PR;
 
-        /*Set the coordinates*/
         data->point.x = touchX * 1.33;
         data->point.y = touchY * 0.75;
-        // Serial.print("Data x ");
-        // Serial.println(touchX);
-
-        // Serial.print("Data y ");
-        // Serial.println(touchY);
     }
 }
 
